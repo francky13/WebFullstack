@@ -5,10 +5,10 @@ const path = require('path');
 const app = express();
 
 // Serve only the static files form the dist directory
-app.use(express.static('./dist/fullstack-angular'));
+app.use(express.static('./dist/fullstackAngular'));
 
 app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: 'dist/fullstack-angular/'}),
+    res.sendFile('index.html', {root: 'dist/fullstackAngular/'}),
 );
 
 // Start the app by listening on the default Heroku port
